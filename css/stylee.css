@@ -68,6 +68,9 @@ ul a{
    
 }
 
+.topbar button:nth-child(1){
+   background-color: rgba(83, 83, 83, 0.548);
+}
 
 .topbar button {
    color: white;
@@ -88,6 +91,15 @@ ul a{
    padding-left: 20px;
    box-shadow: 0 5px 10px rgba(25, 24, 24, 0.777);
 }
+.topbar button:hover:nth-child(2){
+   background-color: #598ff3dc;
+}
+.topbar button:hover:nth-child(1){
+   background-color: rgba(94, 94, 94, 0.288);
+}
+
+
+
 
 
 .btnnn {
