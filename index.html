@@ -55,17 +55,23 @@
       </div> -->
       <div class="navbarr">
          <header>
-         <a href="#" class="logo">Mabar Coyyy</a>
+         <a href="#" class="logo">Macoyyy</a>
          <nav>
-             <ul>
+             <ul id="uli">
                  <li><a href="#">Home</a></li>
                  <li><a href="#">About Us</a></li>
                  <li><a href="#">Projects</a></li>
                  <li><a href="#">Blog</a></li>
-                 <li><a href="#" class="cta">Sign In</a></li>
-                 <li><a href="#" class="ctaa">SIgn Up</a></li>
+               
              </ul>
          </nav>
+         <nav>
+            <ul>
+               
+                <li><a href="login.html" class="cta">Sign In</a></li>
+                <li><a href="regis.html" class="ctaa">SIgn Up</a></li>
+            </ul>
+        </nav>
      </header> 
       </div>
      
@@ -130,8 +136,8 @@
    <div class="products-container">
 
       <div class="product" data-name="p-1">
-        <h3 class="judul">League Of Legends</h3>
-         <div class="price">5,000 Player</div> 
+        <!-- <h3 class="judul">League Of Legends</h3>
+         <div class="price">5,000 Player</div>  -->
          <img src="images/lol2.png" alt="">
          <!-- <div class="star">
             <i class="fas fa-star"></i>
@@ -144,31 +150,19 @@
 
       <div class="product" data-name="p-2">
          
-         <h3 class="judul">Fortnite</h3>
-         <div class="price">6,000 Player</div> 
+         <!-- <h3 class="judul">Fortnite</h3>
+         <div class="price">6,000 Player</div>  -->
          <img src="images/fortnite2.png" alt="">
-         <!-- <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-         </div> -->
+        
         
       </div>
 
      <div class="product" data-name="p-3">
       <a href="gamelistplayer/valorant.html"> 
-         <h3 class="judul">Valorant</h3>
-         <div class="price">4,000 Player</div> 
+         <!-- <h3 class="judul">Valorant</h3>
+         <div class="price">4,000 Player</div>  -->
          <img src="images/valorant2.png" alt="">
-         <!-- <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-         </div> -->
+       
       </a> 
      
        
@@ -176,20 +170,17 @@
 
       <div class="productt" data-name="p-4">
           <img src="images/ml.jpeg" alt="" class="gmbr"> 
-         <!-- <h3>brinjal</h3>
-         <div class="price">$2.00</div> -->
+       
       </div>
 
       <div class="productt" data-name="p-5">
          <img src="images/epep.jpeg" alt="">
-         <!-- <h3>broccoli</h3>
-         <div class="price">$2.00</div> -->
+        
       </div>
 
       <div class="productt" data-name="p-6">
          <img src="images/cod.jpeg" alt="" >
-         <!-- <h3>potatoes</h3>
-         <div class="price">$2.00</div> -->
+        
       </div>
 
    </div>
@@ -341,6 +332,28 @@
 </div>
 
 
+
+<!-- Scrolup and down -->
+<div class="scroll">
+   <div class="scroll-top">
+      <!--     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+        </svg> -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+      </svg>
+    </div>
+    
+    
+</div>
+
+<script>
+   const scrollButton = document.querySelector(".scroll");
+scrollButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
+
 <!-- footer -->
 
 
@@ -349,7 +362,7 @@
       <div class="top">
         <div class="logo-details">  
           <!-- <i class="fab fa-slack"></i> -->
-          <a href="#" class="logo">Mabar Coyyy</a>
+          <a href="#" class="logo">Macoyyy</a>
         </div>
         <div class="media-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>

@@ -16,16 +16,22 @@ li{
    z-index: 100;
 }
 
+.navbarr nav #uli{
+   margin-left: 140px;
+}
+
 header{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   padding: 0px 5%;
    background-color: #222831;
-   height: 58px;
-   width: 198%;
+   display: flex;
    justify-content: space-between;
-   
+   align-items: center;
+   padding: 1.4rem 5%;
+   border-bottom: 1px #111C2C;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 9999;
 }
 
 .logo{
@@ -71,6 +77,8 @@ nav ul li a:hover{
    color: #598ff3;
 }
 
+
+
 .ctaa{
    background-color: #598EF3;
    color: white;
@@ -79,11 +87,33 @@ nav ul li a:hover{
 }
 
 .ctaa:hover{
-   background-color:#598ff3ea;
+   background-color:#4682f3e9;
    color: white;
 }
 
 
+
+@media (max-width: 1366px) {
+   html{
+      font-size: 75%;
+   }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+   html{
+      font-size: 62.5%;
+   }
+
+   
+}
+
+/* phone */
+@media (max-width: 450px) {
+   html{
+      font-size: 55%;
+   }
+}
 /* Hero Image */
 
 body {
@@ -295,6 +325,7 @@ body{
    
 }
 
+
 .container{
    max-width: 1200px;
   /* margin: auto; */
@@ -402,53 +433,8 @@ body{
    color:white;
 }
 
-.products-preview{
-   position: fixed;
-   top:0; left:0;
-   min-height: 100vh;
-   width: 100%;
-   background: rgba(0,0,0,.8);
-   display: none;
-   align-items: center;
-   justify-content: center;
-   z-index: 3;
-}
 
-.products-preview .preview{
-   display: none;
-   padding:2rem;
-   text-align: center;
-   background: rgb(19, 20, 31);;
-   position: relative;
-   margin:2rem;
-   width: 40rem;
-}
 
-.products-preview .preview.active{
-   display: inline-block;
-}
-
-.products-preview .preview img{
-   height: 30rem;
-}
-
-.products-preview .preview .fa-times{
-   position: absolute;
-   top:1rem; right:1.5rem;
-   cursor: pointer;
-   color:#444;
-   font-size: 4rem;
-}
-
-.products-preview .preview .fa-times:hover{
-   transform: rotate(90deg);
-}
-
-.products-preview .preview h3{
-   color:#444;
-   padding:.5rem 0;
-   font-size: 2.5rem;
-}
 .judul{
    position: absolute;
    margin-left: 40px;
@@ -456,42 +442,6 @@ body{
 }
 
 
-
-.products-preview .preview .stars{
-   padding:1rem 0;
-   font-size: 1.7rem;
-}
-
-.products-preview .preview .stars i{
-   color:yellow;
-}
-
-.products-preview .preview .stars span{
-   color:#999;
-}
-
-.products-preview .preview p{
-   line-height: 1.5;
-   padding:1rem 0;
-   font-size: 1.6rem;
-   color:#777;
-}
-
-.products-preview .preview .price{
-   padding:1rem 0;
-   font-size: 2.5rem;
-   color:#27ae60;
-}
-.products-preview .preview .pricee{
-   padding:1rem 0;
-   font-size: 2.5rem;
-   color:#27ae60;
-}
-.star{
-   padding:1rem 0;
-   font-size: 2rem;
-   color:yellow;
-}
 .price{
    background-color: #598EF3;
    border-radius: 5px;
@@ -503,61 +453,6 @@ body{
 
 
 
-
-
-.products-preview .preview .buttons{
-   display: flex;
-   gap:1.5rem;
-   flex-wrap: wrap;
-   margin-top: 1rem;
-}
-
-.products-preview .preview .buttons a{
-   flex:1 1 16rem;
-   padding:1rem;
-   font-size: 1.8rem;
-   color:#444;
-   border:.1rem solid #444;
-}
-
-.products-preview .preview .buttons a.cart{
-   background: #444;
-   color:#fff;
-}
-
-.products-preview .preview .buttons a.cart:hover{
-   background: #111;
-}
-
-.products-preview .preview .buttons a.buy:hover{
-   background: #444;
-   color:#fff;
-}
-
-
-@media (max-width:991px){
-
-   html{
-      font-size: 55%;
-   }
-
-}
-
-@media (max-width:768px){
-
-   .products-preview .preview img{
-      height: 25rem;
-   }
-
-}
-
-@media (max-width:450px){
-
-   html{
-      font-size: 50%;
-   }
-
-}
 
 .container1{
    background-color: #27ae60;
@@ -950,6 +845,39 @@ img:hover{
    margin-bottom: 100px;
 }
 
+/* scroll up and down */
+html {
+   scroll-behavior: smooth;
+ }
+ 
+ .scroll-top {
+   height: 55px;
+   width: 55px;
+   background-color: white;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   cursor: pointer;
+   border-radius: 6px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+   /* hover effect default */
+   transform: scale(0.9);
+   transition: 0.3s ease-in-out transform;
+   /* for centering the icon */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .scroll-top svg {
+   width: 50%;
+   color: black;
+   pointer-events: none;
+ }
+ 
+ .scroll-top:hover {
+   transform: scale(1);
+ }
+ 
 
 
 /* footer */

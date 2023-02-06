@@ -27,8 +27,7 @@
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/styleee.css">
    
-   <!-- custom js file link  -->
-   <script src="js/script.js" defer></script>
+ 
 
 </head>
 <body>
@@ -38,24 +37,24 @@
 
     <div class="navbarr">
       <header>
-      <a href="#" class="logo">Mabar Coyyy</a>
+      <a href="#" class="logo">Macoyyy</a>
       <nav>
           <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Blog</a></li>
-          
-          </ul>
+              <li><a href="#">Blog</a></li> 
+            
+            </ul>
       </nav>
-      <div class="navbar">
+           <div class="navbar">
              
-          <div class="nav_right">
+          <div class="nav_right" data-name="p-1">
              <ul>
                 <li class="nr_li dd_main" style="list-style:none;">
-                   <img src="images/h.jpeg" alt="profile_img">
+                   <img src="images/logoO.png" alt="profile_img" class="propil">
                    
-                   <div class="dropdown">
+                   <!-- <div class="dropdown">
                         <div class="dd_menu">
                       <div class="dd_left">
                          <ul>
@@ -73,13 +72,15 @@
                          </ul>
                       </div>
                    </div>
-                   </div>
+                   </div> -->
                  
                 </li>
                 
              </ul>
           </div>
        </div>
+        
+     
   </header> 
    </div>
   
@@ -140,74 +141,70 @@
    
 <div class="container" id="container">
 
-   <h3 class="title"> </h3>
+   <h3 class="title">Cari Temanmu Dan Jadikan Teman Mabarmu</h3>
 
    <div class="products-container">
 
-      <div class="product" data-name="p-1">
-        <h3 class="judul">League Of Legends</h3>
-         <div class="price">5,000 Player</div> 
+      <div class="product" >
+        <!-- <h3 class="judul">League Of Legends</h3>
+         <div class="price">5,000 Player</div>  -->
          <img src="images/lol2.png" alt="">
-         <!-- <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-         </div> -->
+         
       </div>
 
-      <div class="product" data-name="p-2">
-         <h3 class="judul">Fortnite</h3>
-         <div class="price">6,000 Player</div> 
+      <div class="product" >
+         <!-- <h3 class="judul">Fortnite</h3>
+         <div class="price">6,000 Player</div>  -->
          <img src="images/fortnite2.png" alt="">
-         <!-- <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-         </div> -->
+      
         
       </div>
 
-      <div class="product" data-name="p-3">
-          <h3 class="judul">Valorant</h3>
-         <div class="price">4,000 Player</div> 
+      <div class="product" >
+          <!-- <h3 class="judul">Valorant</h3>
+         <div class="price">4,000 Player</div>  -->
          <a href="gamelistplayerr/valorant.html"> <img src="images/valorant2.png" alt="">
-         <!-- <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-         </div> -->
+         
       </a>
       </div>
 
-      <div class="productt" data-name="p-4">
+      <div class="productt">
          <img src="images/ml.jpeg" alt="" class="gmbr"> 
-        <!-- <h3>brinjal</h3>
-        <div class="price">$2.00</div> -->
+    
      </div>
 
-     <div class="productt" data-name="p-5">
+     <div class="productt" >
         <img src="images/epep.jpeg" alt="">
-        <!-- <h3>broccoli</h3>
-        <div class="price">$2.00</div> -->
+     
      </div>
 
-     <div class="productt" data-name="p-6">
+     <div class="productt" >
         <img src="images/cod.jpeg" alt="" >
-        <!-- <h3>potatoes</h3>
-        <div class="price">$2.00</div> -->
+       
      </div>
 
    </div>
 
 </div>
 
-<div class="products-preview"></div> 
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/logoO.png">
+      <h3>ripall</h3><br>
+     
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p> -->
+      
+      <div class="buttons">
+         <a href="profil.html" class="buy">Edit Profil</a>
+       
+      </div>
+     <div class="garis"></div>
+   </div>
+     
+
+</div> 
 
 <h3 class="title" id="title"> Trend Game Saat Ini </h3>
 
@@ -353,6 +350,26 @@
    <div class="sliderrrrrr"></div>
 </div>
 
+<!-- Scrolup and down -->
+<div class="scroll">
+   <div class="scroll-top">
+      <!--     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l4-4m0 0l4 4m-4-4v18" />
+        </svg> -->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+      </svg>
+    </div>
+    
+    
+</div>
+
+<script>
+   const scrollButton = document.querySelector(".scroll");
+scrollButton.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+</script>
 
 <!-- footer -->
 
@@ -410,6 +427,7 @@
     </div>
   </footer>
 
-
+  <!-- custom js file link  -->
+  <script src="js/script.js" defer></script>
 </body>
 </html>
